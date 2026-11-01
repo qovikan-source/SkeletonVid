@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Companion Installer Setup | SkeletonVid Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="/" class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3" fill="#10b981"></polygon></svg>
+        <span>SkeletonVid Pro</span>
+        <span class="brand-badge">PRO</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="pricing.html">Pricing</a>
+      </div>
+    </nav>
+
+    <header class="hero" style="padding-bottom: 30px;">
+      <span class="eyebrow">1-CLICK COMPANION INSTALLER</span>
+      <h1>Setup SkeletonVid Native Companion</h1>
+      <p class="subhead">The lightweight 6 MB companion handles multi-threaded stream fragment downloads and lossless MP4 merging on your machine.</p>
+
+      <div style="display:flex; justify-content:center; gap:12px; margin-bottom: 40px; flex-wrap:wrap;">
+        <a id="downloadWinBtn" href="/dist/SkeletonVid-host-windows-amd64.exe" download class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+          Download for Windows (.exe)
+        </a>
+        <a id="downloadMacBtn" href="/dist/SkeletonVid-host-darwin-universal" download class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.88c.67-.82 1.13-1.96.99-3.1-.97.04-2.15.65-2.85 1.46-.61.71-1.15 1.86-.99 2.97 1.09.08 2.19-.55 2.85-1.33z"/></svg>
+          Download for macOS (Universal)
+        </a>
+        <a id="downloadLinuxBtn" href="/dist/SkeletonVid-host-linux-amd64" download class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+          Download for Linux (x64)
+        </a>
+      </div>
+    </header>
+
+    <section class="section" style="padding-top:40px;">
+      <h2 class="section-title">3-Step Quick Setup</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="step-num">STEP 1</div>
+          <h3>Download Installer</h3>
+          <p style="color:var(--muted); font-size:14px;">Save the single binary to your computer. It requires zero external dependencies and runs in user space.</p>
+        </div>
+        <div class="card">
+          <div class="step-num">STEP 2</div>
+          <h3>Run Registration</h3>
+          <p style="color:var(--muted); font-size:14px;">On Windows, double-click or run with <code>--install</code>. On macOS/Linux, run <code>chmod +x SkeletonVid-host && ./SkeletonVid-host --install</code>.</p>
+        </div>
+        <div class="card">
+          <div class="step-num">STEP 3</div>
+          <h3>Start Downloading</h3>
+          <p style="color:var(--muted); font-size:14px;">Open any course lecture in Chrome, click the SkeletonVid Pro toolbar icon, and hit Download. Speed updates in real time!</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 SkeletonVid Pro. Native Host verified for Chrome Manifest V3.</p>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

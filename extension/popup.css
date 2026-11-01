@@ -1,0 +1,161 @@
+/* SkeletonVid Pro - Controls, Stream List, Telemetry & Footer */
+.page-title {
+  font-weight: 600;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.drm-warning {
+  background: var(--danger-surface);
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  color: #fca5a5;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  margin-top: 6px;
+}
+
+.controls-grid { display: flex; gap: 8px; }
+
+.select-input {
+  flex: 1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+  padding: 7px 10px;
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+}
+
+.select-input:focus { border-color: var(--accent); }
+
+.btn {
+  border: none;
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease;
+  white-space: nowrap;
+}
+
+.btn-primary { background: var(--accent); color: #06281e; }
+.btn-primary:hover { background: var(--accent-hover); }
+
+.btn-outline-sm {
+  background: transparent;
+  border: 1px solid currentColor;
+  color: inherit;
+  padding: 4px 8px;
+  font-size: 11px;
+}
+
+.btn-outline-sm:hover { background: rgba(255, 255, 255, 0.08); }
+
+.btn-danger-sm {
+  background: transparent;
+  border: 1px solid var(--danger);
+  color: var(--danger);
+  padding: 3px 8px;
+  font-size: 11px;
+  border-radius: 4px;
+}
+
+.btn-danger-sm:hover { background: var(--danger-surface); }
+
+.stream-list, .job-list { display: flex; flex-direction: column; gap: 8px; }
+
+.stream-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.stream-info { display: flex; flex-direction: column; gap: 3px; }
+.stream-tags { display: flex; align-items: center; gap: 6px; }
+
+.stream-meta {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.empty-state {
+  color: var(--text-muted);
+  font-size: 12px;
+  padding: 6px 0;
+}
+
+.job-item {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 8px 10px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.job-title {
+  font-weight: 600;
+  font-size: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 220px;
+}
+
+.job-telemetry {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 6px;
+}
+
+.progress-track {
+  height: 5px;
+  background: #334155;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  width: 0%;
+  transition: width 0.2s linear;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.link-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.link-btn:hover { color: var(--text); text-decoration: underline; }

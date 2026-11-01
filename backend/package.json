@@ -1,0 +1,20 @@
+{
+  "name": "skeletonvid-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cloudflare Worker backend for SkeletonVid Pro licensing and Stripe trial integration",
+  "main": "src/worker.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "d1:init": "wrangler d1 execute skeletonvid-db --file=./schema.sql"
+  },
+  "dependencies": {
+    "stripe": "^17.7.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250224.0",
+    "typescript": "^5.7.3",
+    "wrangler": "^3.111.0"
+  }
+}

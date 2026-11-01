@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing & 3-Day Free Trial | SkeletonVid Pro</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="/" class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3" fill="#10b981"></polygon></svg>
+        <span>SkeletonVid Pro</span>
+        <span class="brand-badge">PRO</span>
+      </a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="setup.html">Companion Setup</a>
+      </div>
+    </nav>
+
+    <header class="hero" style="padding-bottom: 40px;">
+      <span class="eyebrow">RISK-FREE 3-DAY FREE TRIAL</span>
+      <h1>Simple, Transparent Pricing</h1>
+      <p class="subhead">Get unlimited access to high-speed lecture and course video archiving. Cancel anytime before day 3 with zero charge.</p>
+
+      <div class="pricing-card">
+        <span class="eyebrow" style="margin-bottom:8px;">ALL-ACCESS PASS</span>
+        <div class="price">$0 <span style="font-size:18px; color:var(--muted); font-weight:normal;">for 3 days</span></div>
+        <p style="color:var(--muted); font-size:14px; margin-bottom: 20px;">then $5.00 / month • Cancel anytime in 2 clicks</p>
+
+        <form id="checkoutForm" style="display:flex; flex-direction:column; gap:10px; margin-bottom: 24px;">
+          <input type="email" id="emailInput" placeholder="Enter your email" required style="background:var(--bg); border:1px solid var(--border); border-radius:6px; padding:12px; color:var(--text); font-size:14px; outline:none;" />
+          <button type="submit" id="checkoutBtn" class="btn btn-primary" style="justify-content:center;">Start 3-Day Free Trial</button>
+        </form>
+
+        <div class="feature-list">
+          <div class="feature-item"><span class="check">✓</span><span>Unlimited 1080p & 4K video downloads</span></div>
+          <div class="feature-item"><span class="check">✓</span><span>HLS (.m3u8), DASH (.mpd), and direct .mp4 streams</span></div>
+          <div class="feature-item"><span class="check">✓</span><span>Authenticated course portals (Teachable, Kajabi, LMS)</span></div>
+          <div class="feature-item"><span class="check">✓</span><span>Multi-threaded native companion (Windows, macOS, Linux)</span></div>
+          <div class="feature-item"><span class="check">✓</span><span>Automatic engine updates (yt-dlp managed automatically)</span></div>
+          <div class="feature-item"><span class="check">✓</span><span>Instant 1-click cancellation via Stripe Customer Portal</span></div>
+        </div>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <p>© 2026 SkeletonVid Pro. Encrypted checkout powered by Stripe.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

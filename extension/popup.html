@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkeletonVid Pro</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="brand-group">
+      <div class="brand-icon">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polygon points="5 3 19 12 5 21 5 3" fill="currentColor"></polygon>
+        </svg>
+      </div>
+      <span class="brand-name">SkeletonVid Pro</span>
+    </div>
+    <div id="licenseBadge" class="badge">Checking License</div>
+  </header>
+
+  <!-- Trial Banner / License Notice (when expired or unactivated) -->
+  <div id="licenseBanner" class="alert-banner" style="display: none;">
+    <span id="licenseBannerText">3-Day Trial Expired</span>
+    <button id="activateTrialBtn" class="btn btn-outline-sm">Start Trial</button>
+  </div>
+
+  <!-- Primary Page Stream Card -->
+  <section class="card" id="pageCard">
+    <div class="card-header">
+      <span class="card-eyebrow">Active Page</span>
+      <span id="drmBadge" class="badge badge-danger" style="display: none;">DRM Protected</span>
+    </div>
+    <div class="page-title" id="pageTitle">Scanning active tab...</div>
+    
+    <div id="drmWarning" class="drm-warning" style="display: none;">
+      This stream uses hardware Encrypted Media Extensions (EME DRM). Direct capture is restricted.
+    </div>
+
+    <div class="controls-grid" id="directControls">
+      <select id="qualitySelect" class="select-input">
+        <option value="bestvideo[height<=1080][ext=mp4]+bestaudio[ext=m4a]/best[height<=1080]/best">1080p Full HD (MP4)</option>
+        <option value="bestvideo[height<=720][ext=mp4]+bestaudio[ext=m4a]/best[height<=720]/best">720p HD (MP4)</option>
+        <option value="bestvideo[height<=480][ext=mp4]+bestaudio[ext=m4a]/best[height<=480]/best">480p SD (MP4)</option>
+        <option value="bestaudio[ext=m4a]/bestaudio">Audio Only (M4A)</option>
+      </select>
+      <button class="btn btn-primary" id="downloadPageBtn">Download Page</button>
+    </div>
+  </section>
+
+  <!-- Detected Course Streams Card -->
+  <section class="card">
+    <div class="card-header">
+      <span class="card-eyebrow">Detected Streams</span>
+      <span id="streamCount" class="counter">0</span>
+    </div>
+    <div id="streamList" class="stream-list">
+      <div class="empty-state">Play the lecture video to detect HLS (.m3u8) or direct streams.</div>
+    </div>
+  </section>
+
+  <!-- Active Downloads Queue -->
+  <section class="card" id="queueCard">
+    <div class="card-header">
+      <span class="card-eyebrow">Active Downloads</span>
+      <span id="activeCount" class="counter">0</span>
+    </div>
+    <div id="jobList" class="job-list">
+      <div class="empty-state">No downloads running.</div>
+    </div>
+  </section>
+
+  <!-- Footer Actions -->
+  <footer class="footer">
+    <button id="manageBillingBtn" class="link-btn">Manage Subscription</button>
+    <button id="troubleshootBtn" class="link-btn">Companion Setup</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

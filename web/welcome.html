@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to SkeletonVid Pro | 3-Day Trial Active</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <nav class="navbar">
+      <a href="/" class="brand">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3" fill="#10b981"></polygon></svg>
+        <span>SkeletonVid Pro</span>
+        <span class="brand-badge">PRO</span>
+      </a>
+    </nav>
+
+    <header class="hero" style="padding-bottom: 40px;">
+      <span class="eyebrow" id="syncStatus">ACTIVATING 3-DAY FREE TRIAL...</span>
+      <h1>Welcome to SkeletonVid Pro!</h1>
+      <p class="subhead">Your 3-day trial is now active. We're syncing your cryptographically signed license token directly with your Chrome extension.</p>
+
+      <div class="card" style="max-width: 600px; margin: 0 auto 36px; text-align: left;">
+        <div class="telemetry-row">
+          <span>License Synchronization:</span>
+          <span id="extensionStatus" class="telemetry-badge">Detecting Chrome Extension...</span>
+        </div>
+        <div class="telemetry-row">
+          <span>Subscription Status:</span>
+          <strong style="color:var(--accent);">Trial Active (72 Hours)</strong>
+        </div>
+        <div class="telemetry-row">
+          <span>Double-Gate Crypto:</span>
+          <span class="telemetry-val">Ed25519 Verified</span>
+        </div>
+      </div>
+
+      <h2 style="font-size:22px; margin-bottom: 12px;">Step 2: Download Your Companion Installer</h2>
+      <p style="color:var(--muted); font-size:14px; margin-bottom: 24px;">To enable 1080p multi-threaded HLS downloads with full audio sync, run the companion installer below.</p>
+
+      <div style="display:flex; justify-content:center; gap:12px; flex-wrap:wrap;">
+        <a id="welcomeWinBtn" href="/dist/SkeletonVid-host-windows-amd64.exe" download class="btn btn-primary">
+          Download for Windows (.exe)
+        </a>
+        <a id="welcomeMacBtn" href="/dist/SkeletonVid-host-darwin-universal" download class="btn btn-outline">
+          Download for macOS (Universal)
+        </a>
+        <a id="welcomeLinuxBtn" href="/dist/SkeletonVid-host-linux-amd64" download class="btn btn-outline">
+          Download for Linux (x64)
+        </a>
+      </div>
+    </header>
+
+    <footer class="footer">
+      <p>© 2026 SkeletonVid Pro. Your subscription can be managed or canceled anytime via the extension popup.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

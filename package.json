@@ -1,0 +1,12 @@
+{
+  "name": "skeletonvid-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "keys": "node scripts/generate-keys.mjs",
+    "icons": "node scripts/generate-icons.mjs",
+    "test:host": "node scripts/test-native-host.mjs",
+    "build:host": "cd native-host && go build -ldflags=\"-s -w\" -o ../dist/SkeletonVid-host-windows-amd64.exe ."
+  }
+}

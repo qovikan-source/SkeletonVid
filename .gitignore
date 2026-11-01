@@ -1,0 +1,15 @@
+# Logs and runtime artifacts
+*.log
+*.tmp
+
+# Secrets and keys
+.keys/
+.dev.vars
+
+# Dependencies
+node_modules/
+.wrangler/
+
+# OS artifacts
+Thumbs.db
+.DS_Store

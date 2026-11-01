@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "SkeletonVid Pro — Course & Video Downloader",
+  "version": "1.0.0",
+  "description": "Save online lectures, HLS streams, and videos for offline viewing in full HD.",
+  "permissions": [
+    "webRequest",
+    "cookies",
+    "nativeMessaging",
+    "storage",
+    "activeTab",
+    "scripting",
+    "downloads"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "SkeletonVid Pro",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArvDgGjxKBHG2D1nCqOcs5Vpo5yj9kjpnDTdoGKP6Tb3VrVhbttwiBjU7A63O6PxxFzoJZL/5T81flPv5GPwImD5r3XZm9B2HXqIU5hFlt4EzFg+RRrKyjytCZMHfy8VVcJe1RqtoQyskRk8R4KYVQc42CmuajAxwL1jWI8Ml8nw6o058+xL35JvpuQNrzaa2xPbnHQgHarps1aDOrEawVHKy52AwTWCwLsMoS7G7v5bpBIgJxOiq6Y2JPRyjJyULH1lkM1trxD1kYCMiTdLJZY7wmZtnxol7BFO1kmYEATMpH718CNzPZvHh1Ho6cZaGfs92k2/gg7DBhLee4NBqoQIDAQAB"
+}
